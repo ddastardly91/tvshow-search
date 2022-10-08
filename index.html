@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flixer - Find your next show.</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Flixer</h1>
+      <h5>Find your next show.</h5>
+
+      <div class="search-wrapper">
+        <form id="searchForm">
+            <input type="text" name="search" id="search" />
+            <button><i class="bi bi-search"></i></button>
+        </form>
+      </div>
+      <div>
+        <p class="hidden searchResult">Search results for: <strong><span id="searchTerm">lorem ipsum.</span></strong></h2>
+      </div>
+      <div class="show-container">
+        <div class="show-wrapper hidden"></div>
+      </div>
+      <h3 class="hidden error">Something went wrong, try again later!</h3>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
